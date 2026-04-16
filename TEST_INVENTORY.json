@@ -1,0 +1,170 @@
+{
+  "project": "Shady Meadows B&B - Test Suite",
+  "total_tests": 20,
+  "date_created": "2026-03-26",
+  "test_files": [
+    {
+      "file": "tests/booking.spec.js",
+      "count": 3,
+      "tests": [
+        {
+          "id": 1,
+          "name": "Open booking form",
+          "description": "Verify that booking form is visible on page",
+          "type": "UI Visibility"
+        },
+        {
+          "id": 2,
+          "name": "Homepage loads correctly",
+          "description": "Verify that page loads with correct URL",
+          "type": "Navigation"
+        },
+        {
+          "id": 3,
+          "name": "Booking form has input fields",
+          "description": "Verify that booking form contains input fields",
+          "type": "Form Validation"
+        }
+      ]
+    },
+    {
+      "file": "tests/home.spec.js",
+      "count": 4,
+      "tests": [
+        {
+          "id": 4,
+          "name": "Home page loads",
+          "description": "Verify that home page URL is correct",
+          "type": "Navigation"
+        },
+        {
+          "id": 5,
+          "name": "Rooms displayed on page",
+          "description": "Verify that room cards are visible",
+          "type": "UI Visibility"
+        },
+        {
+          "id": 6,
+          "name": "Navigation menu visible",
+          "description": "Verify that navigation menu is displayed",
+          "type": "UI Visibility"
+        },
+        {
+          "id": 7,
+          "name": "Footer visible and contains content",
+          "description": "Verify that footer is visible and has content",
+          "type": "UI Visibility"
+        }
+      ]
+    },
+    {
+      "file": "tests/search.spec.js",
+      "count": 10,
+      "tests": [
+        {
+          "id": 8,
+          "name": "Page navigation works",
+          "description": "Click Rooms link and verify rooms are visible",
+          "type": "Navigation"
+        },
+        {
+          "id": 9,
+          "name": "Contact section visible",
+          "description": "Verify that contact section is visible",
+          "type": "UI Visibility"
+        },
+        {
+          "id": 10,
+          "name": "Room cards are clickable",
+          "description": "Verify that room cards and book buttons are clickable",
+          "type": "Interaction"
+        },
+        {
+          "id": 11,
+          "name": "Multiple rooms displayed",
+          "description": "Verify that more than one room card is displayed",
+          "type": "Content Validation"
+        },
+        {
+          "id": 12,
+          "name": "Room cards have titles",
+          "description": "Verify that room titles are visible in cards",
+          "type": "Content Validation"
+        },
+        {
+          "id": 13,
+          "name": "Amenities visible on rooms",
+          "description": "Verify that room amenity badges are displayed",
+          "type": "Content Validation"
+        },
+        {
+          "id": 14,
+          "name": "Booking section scrollable",
+          "description": "Click Booking link and verify section is in viewport",
+          "type": "Navigation"
+        },
+        {
+          "id": 15,
+          "name": "Room prices visible",
+          "description": "Verify that room prices are displayed",
+          "type": "Content Validation"
+        },
+        {
+          "id": 16,
+          "name": "Hero section visible",
+          "description": "Verify that hero section is visible on page",
+          "type": "UI Visibility"
+        },
+        {
+          "id": 17,
+          "name": "Location section with map visible",
+          "description": "Verify that location section and map are visible",
+          "type": "UI Visibility"
+        }
+      ]
+    },
+    {
+      "file": "tests/ui.spec.js",
+      "count": 3,
+      "tests": [
+        {
+          "id": 18,
+          "name": "Mobile responsive",
+          "description": "Verify mobile viewport (375x667) renders correctly",
+          "type": "Responsive"
+        },
+        {
+          "id": 19,
+          "name": "Navigation visible",
+          "description": "Verify navigation menu is visible",
+          "type": "UI Visibility"
+        },
+        {
+          "id": 20,
+          "name": "Page reload stable",
+          "description": "Verify page reloads without errors",
+          "type": "Stability"
+        }
+      ]
+    }
+  ],
+  "test_categories": {
+    "Navigation": 4,
+    "UI Visibility": 8,
+    "Interaction": 1,
+    "Content Validation": 4,
+    "Form Validation": 1,
+    "Responsive": 1,
+    "Stability": 1
+  },
+  "browsers_tested": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "test_execution_info": {
+    "total_test_cases": 20,
+    "total_test_runs_per_execution": 60,
+    "description": "20 unique tests × 3 browsers = 60 total test runs"
+  }
+}

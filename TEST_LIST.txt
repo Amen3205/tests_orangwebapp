@@ -1,0 +1,119 @@
+
+===============================================
+
+FILE 1: booking.spec.js (3 tests)
+───────────────────────────────────────────────
+1. Open booking form
+   - Verify booking form is visible on page
+   - Type: UI Visibility
+
+2. Homepage loads correctly
+   - Verify page loads with correct URL
+   - Type: Navigation
+
+3. Booking form has input fields
+   - Verify that booking form contains input fields
+   - Type: Form Validation
+
+FILE 2: home.spec.js (4 tests)
+───────────────────────────────────────────────
+4. Home page loads
+   - Verify home page URL is correct
+   - Type: Navigation
+
+5. Rooms displayed on page
+   - Verify room cards are visible
+   - Type: UI Visibility
+
+6. Navigation menu visible
+   - Verify navigation menu is displayed
+   - Type: UI Visibility
+
+7. Footer visible and contains content
+   - Verify footer is visible and has content
+   - Type: UI Visibility
+
+FILE 3: search.spec.js (10 tests)
+───────────────────────────────────────────────
+8. Page navigation works
+   - Click Rooms link and verify rooms are visible
+   - Type: Navigation
+
+9. Contact section visible
+   - Verify contact section is visible
+   - Type: UI Visibility
+
+10. Room cards are clickable
+    - Verify room cards and book buttons are clickable
+    - Type: Interaction
+
+11. Multiple rooms displayed
+    - Verify more than one room card is displayed
+    - Type: Content Validation
+
+12. Room cards have titles
+    - Verify room titles are visible in cards
+    - Type: Content Validation
+
+13. Amenities visible on rooms
+    - Verify room amenity badges are displayed
+    - Type: Content Validation
+
+14. Booking section scrollable
+    - Click Booking link and verify section is in viewport
+    - Type: Navigation
+
+15. Room prices visible
+    - Verify room prices are displayed
+    - Type: Content Validation
+
+16. Hero section visible
+    - Verify that hero section is visible on page
+    - Type: UI Visibility
+
+17. Location section with map visible
+    - Verify that location section and map are visible
+    - Type: UI Visibility
+
+FILE 4: ui.spec.js (3 tests)
+───────────────────────────────────────────────
+18. Mobile responsive
+    - Verify mobile viewport (375x667) renders correctly
+    - Type: Responsive
+
+19. Navigation visible
+    - Verify navigation menu is visible
+    - Type: UI Visibility
+
+20. Page reload stable
+    - Verify page reloads without errors
+    - Type: Stability
+
+CATEGORY BREAKDOWN
+───────────────────────────────────────────────
+UI Visibility............. 8 tests (40%)
+Navigation............... 4 tests (20%)
+Content Validation........ 4 tests (20%)
+Interaction.............. 1 test  (5%)
+Form Validation.......... 1 test  (5%)
+Responsive............... 1 test  (5%)
+Stability................ 1 test  (5%)
+                         ─────────────
+                         20 tests (100%)
+
+BROWSER COVERAGE
+───────────────────────────────────────────────
+✓ Chromium
+✓ Firefox
+✓ WebKit
+
+QUICK COMMANDS
+───────────────────────────────────────────────
+npm test                    # Run all tests (60 runs)
+npm run test:headed         # With visible browser
+npm run test:ui             # Interactive mode
+npx playwright show-report  # View HTML report
+
+===============================================
+Last Updated: 26 March 2026
+===============================================
