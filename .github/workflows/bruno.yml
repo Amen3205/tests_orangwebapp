@@ -1,10 +1,6 @@
 name: Bruno API Tests — Orange Web App
 
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
   workflow_dispatch:
 
 jobs:
