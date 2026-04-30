@@ -18,5 +18,14 @@
   "dependencies": {
     "@playwright/test": "^1.58.2",
     "playwright": "^1.58.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amen3205/PFE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amen3205/PFE/issues"
+  },
+  "homepage": "https://github.com/Amen3205/PFE#readme"
 }
