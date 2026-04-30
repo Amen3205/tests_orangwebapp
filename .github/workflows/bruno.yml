@@ -26,12 +26,7 @@ jobs:
         run: npm install -g @usebruno/cli
 
       - name: Run Bruno collection
-        run: |
-          bru run "API Orange Web App" \
-            --env "orange app" \
-            --reporter-json results.json \
-            --reporter-html results.html \
-            --recursive
+        run: bru run "API Orange Web App" -r --env "orange app" --reporter-json results.json --reporter-html results.html
         working-directory: "Sample API Collection bruno"
 
       - name: Upload JSON report
