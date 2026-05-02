@@ -1,4 +1,3 @@
-$content = @"
 name: Playwright Tests — Shady Meadows B&B
 
 on:
