@@ -1,4 +1,4 @@
-name: Playwright Tests - Shady Meadows B&B
+name: Playwright Tests
 
 on:
   push:
