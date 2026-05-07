@@ -27,22 +27,24 @@ jobs:
       - name: Install Bruno CLI
         run: npm install -g @usebruno/cli
 
+      - name: List directories (debug)
+        run: ls -la
+
       - name: Run Bruno collection
         run: >
-          bru run "API Orange Web App"
-          -r
+          bru run -r
           --env "orange app"
           --reporter-json results.json
           --reporter-html results.html
           || true
-        working-directory: "bruno-collection"
+        working-directory: "Sample API Collection bruno"
 
       - name: Upload JSON report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: bruno-report-json
-          path: "bruno-collection/results.json"
+          path: "Sample API Collection bruno/results.json"
           retention-days: 14
 
       - name: Upload HTML report
@@ -50,5 +52,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: bruno-report-html
-          path: "bruno-collection/results.html"
+          path: "Sample API Collection bruno/results.html"
           retention-days: 14
