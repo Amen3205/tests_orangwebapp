@@ -2,15 +2,15 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  timeout:  30000,
-  retries:  1,
+  timeout: 30000,
+  retries: 1,
 
   use: {
-    baseURL:   'https://automationintesting.online/',
-    screenshot: 'on',             // capture à chaque test
-    video:      'on-first-retry', // vidéo si le test échoue
-    trace:      'on-first-retry', // trace Playwright Viewer
-    headless:   true,
+    baseURL: 'https://automationintesting.online/',
+    screenshot: 'on',    // screenshot à chaque test
+    video: 'on',         // vidéo à chaque test
+    trace: 'on',         // trace viewer à chaque test
+    headless: true,
   },
 
   projects: [
