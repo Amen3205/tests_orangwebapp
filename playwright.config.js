@@ -1,34 +1,26 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  fullyParallel: true,
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
-  reporter: [
-    ['html'],
-    ['list']
-  ],
+  timeout:  30000,
+  retries:  1,
+
   use: {
-    baseURL: 'https://automationintesting.online/',
-    trace: 'on-first-retry',
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure'
+    baseURL:   'https://automationintesting.online/',
+    screenshot: 'on',             // capture à chaque test
+    video:      'on-first-retry', // vidéo si le test échoue
+    trace:      'on-first-retry', // trace Playwright Viewer
+    headless:   true,
   },
 
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    { name: 'chromium', use: { browserName: 'chromium' } },
+    { name: 'firefox',  use: { browserName: 'firefox'  } },
+    { name: 'webkit',   use: { browserName: 'webkit'   } },
+  ],
+
+  reporter: [
+    ['html', { outputFolder: 'playwright-report' }],
+    ['list'],
   ],
 });
