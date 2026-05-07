@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: Playwright Tests
+=======
+name: Playwright Tests 
+>>>>>>> 59392e8 (feat: add Gherkin feature files for all 30 tests)
 
 on:
   push:
